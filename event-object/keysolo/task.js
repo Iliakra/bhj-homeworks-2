@@ -20,7 +20,6 @@ class Game {
     window.addEventListener('keydown', (e) => {
         let insertedValue = e.key.toLowerCase();
         let currentSymbol = this.currentSymbol.textContent.toLowerCase();
-        console.log(insertedValue, currentSymbol);
         if(insertedValue === currentSymbol) {
           this.success();
         } else {
