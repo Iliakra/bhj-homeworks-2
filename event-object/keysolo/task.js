@@ -6,7 +6,7 @@ class Game {
     this.lossElement = container.querySelector('.status__loss');
 
     this.reset();
-
+    
     this.registerEvents();
   }
 
@@ -17,13 +17,16 @@ class Game {
   }
 
   registerEvents() {
-    /*
-      TODO:
-      Написать обработчик события, который откликается
-      на каждый введённый символ.
-      В случае правильного ввода слова вызываем this.success()
-      При неправильном вводе символа - this.fail();
-     */
+    window.addEventListener('keydown', (e) => {
+        let insertedValue = e.key.toLowerCase();
+        let currentSymbol = this.currentSymbol.textContent.toLowerCase();
+        console.log(insertedValue, currentSymbol);
+        if(insertedValue === currentSymbol) {
+          this.success();
+        } else {
+          this.fail();
+        }
+    });
   }
 
   success() {
