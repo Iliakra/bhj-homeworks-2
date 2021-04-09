@@ -1,5 +1,7 @@
 let dropDownButtonArray = document.getElementsByClassName('dropdown__value');
+dropDownButtonArray = [...dropDownButtonArray];
 let dropDownListItemLinkArray = document.getElementsByClassName('dropdown__link');
+dropDownListItemLinkArray = [...dropDownListItemLinkArray];
 
 
 function dropDownListHandler(e) {
