@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+
+#clear-button {
+  width: 70%;
+  margin-top: 20px;
+  align-self: center;
+}
