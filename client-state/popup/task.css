@@ -41,14 +41,5 @@ body {
 
 .btn {
   text-decoration: none;
-  color: whitesmoke;
-  padding: 10px 20px;
-  border-radius: 2px;
-}
-
-.btn_danger {
-  background: red;
-}
-.btn_success {
-  background: green;
+  color: black;
 }
