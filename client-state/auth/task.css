@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial';
+  font-family: "Arial";
 }
 
 .signin {
@@ -33,5 +33,13 @@ body {
 }
 
 .welcome_active {
+  display: block;
+}
+
+.exit-button {
+  display: none;
+}
+
+.exit-button_active {
   display: block;
 }
